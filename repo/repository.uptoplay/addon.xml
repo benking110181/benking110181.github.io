@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="uptoplay" name="repository.uptoplay" version="0.1" provider-name="benking110181">
+<addon id="repository.uptoplay" name="repository.uptoplay" version="0.1" provider-name="benking110181">
     <extension point="xbmc.addon.repository" name="uptoplay Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/benking110181/repository.uptoplay/master/repo/zips/addons.xml</info>

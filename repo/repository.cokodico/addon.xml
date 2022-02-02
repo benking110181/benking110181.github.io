@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.cokodico" name="cokodico Alpha Repository" version="0.1" provider-name="cokodico">
+    <extension point="xbmc.addon.repository" name="cokodico Alpha Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/benking110181/repository.cokodico/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/benking110181/repository.cokodico/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/benking110181/repository.cokodico/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">cokodico Repository</summary>
+        <description lang="fr">Installer cokodico Repo!</description>
+        <summary>cokodico Alpha Repository</summary>
+        <description>Un référentiel pour les versions alpha des skins de cokodico !</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

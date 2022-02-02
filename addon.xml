@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="benking110181.github.io" name="benking110181.github.io Alpha Repository" version="0.1" provider-name="benking110181.github.io">
+    <extension point="xbmc.addon.repository" name="benking110181.github.io Alpha Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/benking110181/benking110181.github.io/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/benking110181/benking110181.github.io/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/benking110181/benking110181.github.io/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">benking110181.github.io Repository</summary>
+        <description lang="fr">Installer benking110181.github.io Alpha Repository !</description>
+        <summary>benking110181.github.io Alpha Repository</summary>
+        <description>Un référentiel pour le benking110181.github.io Alpha Repository !</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

@@ -1,1 +1,310 @@
+<?xml version='1.0' encoding='utf-8'?>
+<addons><addon id="plugin.video.orange.fr" name="Orange TV France" version="1.5.0" provider-name="BreizhReloaded">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.routing" version="0.2.3" />
+        <import addon="script.module.inputstreamhelper" version="0.5.2" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="resources/service.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Watch TV channels provided by your Orange subscription from Kodi!</summary>
+        <description lang="en">This addon brings to Kodi all the TV channels included in your Orange subscription. Easy install via IPTV Manager.</description>
 
+        <summary lang="fr">Regardez les chaînes de télé incluses dans votre abonnement Orange depuis Kodi !</summary>
+        <description lang="fr">Cet addon intègre à Kodi toutes les chaînes de télé incluses dans votre abonnement Orange. L'installation se fait facilement via IPTV Manager.</description>
+
+        <platform>all</platform>
+        <license>MIT</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=360391</forum>
+        <source>https://github.com/BreizhReloaded/plugin.video.orange.fr</source>
+        <email>breizhreloaded@outlook.com</email>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+            <screenshot>resources/media/screenshot_1.jpg</screenshot>
+            <screenshot>resources/media/screenshot_2.jpg</screenshot>
+            <screenshot>resources/media/screenshot_3.jpg</screenshot>
+        </assets>
+    </extension>
+</addon><addon id="plugin.video.sendtokodiU2P" name="U2Pplay" version="0.5.19" provider-name="noway">
+  <requires>
+    <trycatch>
+      <try>
+          <import addon="xbmc.python" version="3.0.0" />
+      </try>
+      <catch>
+          <import addon="xbmc.python" version="2.25.0" />
+      </catch>
+        </trycatch>
+    <import addon="script.module.requests" version="2.12.4" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="service.py">
+  <provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">U2Pplay</summary>
+    <description lang="en">U2Pplay permet d'importer une base de contenu en 1 clic ou de creer des fichiers strm a partir d'IDs de pastes cryptes puis de les streamer via Kodi. Necessite un compte premium Uptobox ou Alldebrid</description>
+    <disclaimer lang="en" />
+    <platform>all</platform>
+    <license>MIT License</license>
+    <website />
+    <email />
+    <source />
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+	  <screenshot>screenshot-01.jpg</screenshot>
+      <screenshot>screenshot-02.jpg</screenshot>
+    </assets>
+  </extension>
+</addon><addon id="repository.auramod.aio" name="Auramod Repo AIO" version="1.0" provider-name="SerpentDrago">
+	<extension point="xbmc.addon.repository" name="Auramod Repo AIO">
+		<dir minversion="18.0" maxversion="18.9.9">
+			<info compressed="false">https://raw.githubusercontent.com/SerpentDrago/repository.auramod.aio/master/repo/leia/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/SerpentDrago/repository.auramod.aio/master/repo/leia/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com//SerpentDrago/repository.auramod.aio/master/repo/leia/zips/</datadir>
+		</dir>
+		<dir minversion="19">
+			<info compressed="false">https://raw.githubusercontent.com/SerpentDrago/repository.auramod.aio/master/repo/matrix/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/SerpentDrago/repository.auramod.aio/master/repo/matrix/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/SerpentDrago/repository.auramod.aio/master/repo/matrix/zips/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Auramod All In One Kodi Repo</summary>
+		<description>Auramod Repo Contianing SerpentDrago's versions of Auramod for both Kodi Leia and Matrix </description>
+		<platform>all</platform>
+        <assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon><addon id="repository.benking" name="benking Alpha Repository" version="0.1" provider-name="benking">
+    <extension point="xbmc.addon.repository" name="benking Alpha Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/benking110181/repository.benking/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/benking110181/repository.benking/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/benking110181/repository.benking/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">benking Repository</summary>
+        <description lang="fr">Installer benking Repo!</description>
+        <summary>benking Alpha Repository</summary>
+        <description>Un référentiel pour les versions alpha des skins de benking !</description>
+        <disclaimer />
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon><addon id="repository.cokodico" name="cokodico Alpha Repository" version="0.1" provider-name="cokodico">
+    <extension point="xbmc.addon.repository" name="cokodico Alpha Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/benking110181/repository.cokodico/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/benking110181/repository.cokodico/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/benking110181/repository.cokodico/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">cokodico Repository</summary>
+        <description lang="fr">Installer cokodico Repo!</description>
+        <summary>cokodico Alpha Repository</summary>
+        <description>Un référentiel pour les versions alpha des skins de cokodico !</description>
+        <disclaimer />
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon><addon id="repository.heppen" name="heppen's repository" version="3.0.0" provider-name="nfm886 (heppen)">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0" />
+  </requires>
+  <extension point="xbmc.addon.repository" name="Heppen's Repository">
+    <dir minversion="19.0">
+      <info>https://raw.githubusercontent.com/nfm886/repository.heppen/main/zips/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/nfm886/repository.heppen/main/zips/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/nfm886/repository.heppen/main/zips/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Heppen's Kodi repository</summary>
+    <description>Repository for heppen's skins</description>
+    <disclaimer>
+    </disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/icon.jpg</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon><addon id="repository.jurialmunkey" name="jurialmunkey Alpha Repository" version="2.2" provider-name="jurialmunkey">
+    <extension point="xbmc.addon.repository" name="jurialmunkey Alpha Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/</datadir>
+        </dir>
+		<dir minversion="18.0" maxversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/leia/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/leia/zips/</datadir>
+        </dir>
+        <dir minversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/matrix/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>jurialmunkey Alpha Repository</summary>
+        <description>A repository for alpha releases of jurialmunkey's skins.</description>
+        <disclaimer />
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon><addon id="repository.marcelveldt" version="1.0.3" name="Marcelveldt's BETA repository" provider-name="marcelveldt, finkleandeinhorn">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0" />
+	</requires>
+	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/repository/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/repository/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/repository/</datadir>
+		</dir>
+		<dir minversion="18.9.700">
+			<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/matrix/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/matrix/</datadir>
+		</dir>
+		<dir maxversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/olderversions/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/olderversions/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/olderversions/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
+		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon><addon id="repository.roidy-matrix" name="roidy's matrix test repository" version="0.0.1" provider-name="roidy">
+    <extension point="xbmc.addon.repository" name="roidy's matrix test repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/roidy/repository.roidy-matrix/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/roidy/repository.roidy-matrix/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/roidy/repository.roidy-matrix/master/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>roidy's matrix test repository</summary>
+        <description>Just some stuff....</description>
+        <disclaimer />
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon><addon id="repository.serpentdrago" name="SerpentDrago's Repo" version="1.1" provider-name="SerpentDrago">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0" />
+        </requires>
+        <extension point="xbmc.addon.repository" name="SerpentDrago's Repo">
+            <dir>
+                <info compressed="false">https://raw.githubusercontent.com/SerpentDrago/skin.auramod/repo/zips/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/SerpentDrago/skin.auramod/repo/zips/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/SerpentDrago/skin.auramod/repo/zips/</datadir>
+            </dir>
+            <dir>
+                <info compressed="false">https://raw.githubusercontent.com/SerpentDrago/serpentdrago.github.io/master/zips/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/SerpentDrago/serpentdrago.github.io/master/zips/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/SerpentDrago/serpentdrago.github.io/master/zips/</datadir>
+            </dir>
+        </extension>
+
+        <extension point="xbmc.addon.metadata">
+            <summary>SerpentDrago's  Kodi Repo</summary>
+            <description>SerpentDrago's Home for his Addons and mods</description>
+            <platform>all</platform>
+    </extension>
+</addon><addon id="repository.tikipeter" name="Tikipeter's Repository" version="0.0.6" provider-name="Tikipeter">
+    <extension point="xbmc.addon.repository" name="Tikipeter's Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/zip</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Tikipeter's Repository</summary>
+        <description>Unofficial add-ons repository</description>
+    </extension>
+</addon><addon id="repository.uptoplay" name="repository.uptoplay" version="0.1" provider-name="benking110181">
+    <extension point="xbmc.addon.repository" name="uptoplay Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/benking110181/repository.uptoplay/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/benking110181/repository.uptoplay/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/benking110181/repository.uptoplay/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>repository.uptoplay</summary>
+        <description>DESCRIPTION OF repository.uptoplay</description>
+        <disclaimer />
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon><addon id="repository.vstream" name="vStream Repository" version="0.0.5" provider-name="Venom">
+    <extension point="xbmc.addon.repository" name="vStream XBMC Addon Repository">
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Kodi-vStream/venom-xbmc-addons/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Kodi-vStream/venom-xbmc-addons/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/Kodi-vStream/venom-xbmc-addons/raw/master/repo</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Ovni-crea/seleniumzip/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Ovni-crea/seleniumzip/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Ovni-crea/seleniumzip/master</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Arias800/Fichier-divers/master/addon.xml</info>
+        <checksum>https://raw.githubusercontent.com/Arias800/Fichier-divers/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Arias800/script.module.dnspython/master</datadir>
+    </dir>
+   </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">vStream Repository</summary>
+        <description lang="fr">Installer vStream</description>
+        <summary lang="en">vStream Repository</summary>
+        <description lang="en">Download and install vStream</description>
+        <platform>all</platform>
+    </extension>
+</addon></addons>

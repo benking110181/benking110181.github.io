@@ -98,8 +98,8 @@
         <disclaimer />
         <platform>all</platform>
         <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
         </assets>
     </extension>
 </addon><addon id="repository.cokodico" name="cokodico Alpha Repository" version="0.1" provider-name="cokodico">

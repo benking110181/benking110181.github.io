@@ -8,7 +8,9 @@
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>repository.cokodico</summary>
+        <summary lang="fr">cokodico Repository</summary>
+        <description lang="fr">Installer cokodico Repo!</description>
+        <summary>cokodico Alpha Repository</summary>
         <description>Un référentiel pour les versions alpha des skins de cokodico !</description>
         <disclaimer></disclaimer>
         <platform>all</platform>

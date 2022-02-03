@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.MatrixFlix" version="0.1.0" name="Skin MatrixFlix" provider-name="MatrixFlix, Rayflix, Osmoze06, Arias800">
+	<requires>
+		<import addon="script.module.requests" />
+	</requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Skin MatrixFlix</summary>
+        <description lang="fr">Packages de Skin réalisé par Rayflix sur la monture du skin "Project Aura".</description>
+        <disclaimer lang="fr">En cas de bugs, propositions d'améliorations ou ajout de contenus, contactez-nous sur GitHub ou sur Discord.</disclaimer>
+        <language>fr</language>
+        <platform>all</platform>
+        <forum></forum>
+        <website></website>
+        <source></source>
+    <news>
+	VERSION 0.1 - 03/02/2021
+	- Création initiale
+
+	Un grand Merci à MatrixFlix, Rayflix, Arias800, Sigmund & Osmoze06 pour leur aide.
+    </news>		
+        <assets>
+    	<icon>resources/icon.png</icon>
+    	<fanart>resources/fanart.jpg</fanart>
+    	<screenshot>resources/screenshot-01.jpg</screenshot>
+    	<screenshot>resources/screenshot-02.jpg</screenshot>
+  	</assets>		
+    </extension>
+</addon>

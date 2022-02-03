@@ -3,32 +3,29 @@
 version="0.1"
 name="matrixflix"
 provider-name="MatrixFlix, Rayflix,">
-  <requires>
-    <trycatch>
-      <try>
-         <import addon="xbmc.python" version="3.0.0"/>
-      </try>
-      <catch>
-         <import addon="xbmc.python" version="2.25.0"/>
-      </catch>
-        </trycatch>
-  <import addon="script.module.requests" version="2.12.4"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="plugin.py">
-  <provides>video</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-  <summary lang="fr_FR">MatrixFlix!</summary>
-  <description lang="fr_FR">Packages de Skin! Streamer via Kodi. Necessite un compte premium Uptobox ou Alldebrid.</description>
-  <disclaimer lang="fr_FR">En cas de bugs, propositions d'améliorations ou ajout de contenus, contactez-nous sur GitHub ou sur Discord.</disclaimer>   		
-  <assets>
-    <icon>resources/icon.png</icon>
-    <fanart>resources/fanart.jpg</fanart>
-    <screenshot>resources/screenshot-01.jpg</screenshot>
-    <screenshot>resources/screenshot-02.jpg</screenshot>
-  </assets>
-<news>  
-- Création initiale
-</news>		
+  	<requires>
+		<import addon="script.module.requests" />
+	</requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+	<provides>video</provides>
+    </extension>
+	<extension point="xbmc.addon.metadata">
+  	<summary lang="fr_FR">MatrixFlix!</summary>
+  	<description lang="fr_FR">Packages de Skin! Streamer via Kodi. Necessite un compte premium Uptobox ou Alldebrid.</description>
+  	<disclaimer lang="fr_FR">En cas de bugs, propositions d'améliorations ou ajout de contenus, contactez-nous sur GitHub ou sur Discord.</disclaimer>
+        <language>fr</language> 
+	<platform>all</platform>
+        <forum></forum>
+        <website></website>
+        <source></source>  
+    <news>  
+	- Création initiale
+    </news>		
+  	<assets>
+    	    <icon>icon.png</icon>
+    	    <fanart>fanart.jpg</fanart>
+    		<screenshot>resources/screenshot-01.jpg</screenshot>
+		<screenshot>resources/screenshot-02.jpg</screenshot>
+  	</assets>		
 </extension>
 </addon>

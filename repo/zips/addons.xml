@@ -1,171 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.video.matrixflix" version="0.1" name="matrixflix" provider-name="MatrixFlix, Rayflix,">
-  	<requires>
-		<import addon="script.module.requests" />
-	</requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-	<provides>video</provides>
-    </extension>
-	<extension point="xbmc.addon.metadata">
-  	<summary lang="fr_FR">MatrixFlix!</summary>
-  	<description lang="fr_FR">Packages de Skin! Streamer via Kodi. Necessite un compte premium Uptobox ou Alldebrid.</description>
-  	<disclaimer lang="fr_FR">En cas de bugs, propositions d'améliorations ou ajout de contenus, contactez-nous sur GitHub ou sur Discord.</disclaimer>
-        <language>fr</language> 
-	<platform>all</platform>
-        <forum />
-        <website />
-        <source />  
-    <news>  
-	- Création initiale
-    </news>		
-  	<assets>
-    	    <icon>icon.png</icon>
-    	    <fanart>fanart.jpg</fanart>
-    		<screenshot>resources/screenshot-01.jpg</screenshot>
-		<screenshot>resources/screenshot-02.jpg</screenshot>
-  	</assets>		
-</extension>
-</addon><addon id="plugin.video.orange.fr" name="Orange TV France" version="1.5.0" provider-name="BreizhReloaded">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.routing" version="0.2.3" />
-        <import addon="script.module.inputstreamhelper" version="0.5.2" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="resources/addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="resources/service.py" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Watch TV channels provided by your Orange subscription from Kodi!</summary>
-        <description lang="en">This addon brings to Kodi all the TV channels included in your Orange subscription. Easy install via IPTV Manager.</description>
-
-        <summary lang="fr">Regardez les chaînes de télé incluses dans votre abonnement Orange depuis Kodi !</summary>
-        <description lang="fr">Cet addon intègre à Kodi toutes les chaînes de télé incluses dans votre abonnement Orange. L'installation se fait facilement via IPTV Manager.</description>
-
-        <platform>all</platform>
-        <license>MIT</license>
-        <forum>https://forum.kodi.tv/showthread.php?tid=360391</forum>
-        <source>https://github.com/BreizhReloaded/plugin.video.orange.fr</source>
-        <email>breizhreloaded@outlook.com</email>
-        <assets>
-            <icon>resources/media/icon.png</icon>
-            <fanart>resources/media/fanart.jpg</fanart>
-            <screenshot>resources/media/screenshot_1.jpg</screenshot>
-            <screenshot>resources/media/screenshot_2.jpg</screenshot>
-            <screenshot>resources/media/screenshot_3.jpg</screenshot>
-        </assets>
-    </extension>
-</addon><addon id="plugin.video.sendtokodiU2P" name="U2Pplay" version="0.5.19" provider-name="noway">
-  <requires>
-    <trycatch>
-      <try>
-          <import addon="xbmc.python" version="3.0.0" />
-      </try>
-      <catch>
-          <import addon="xbmc.python" version="2.25.0" />
-      </catch>
-        </trycatch>
-    <import addon="script.module.requests" version="2.12.4" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="service.py">
-  <provides>video</provides>
-	</extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">U2Pplay</summary>
-    <description lang="en">U2Pplay permet d'importer une base de contenu en 1 clic ou de creer des fichiers strm a partir d'IDs de pastes cryptes puis de les streamer via Kodi. Necessite un compte premium Uptobox ou Alldebrid</description>
-    <disclaimer lang="en" />
-    <platform>all</platform>
-    <license>MIT License</license>
-    <website />
-    <email />
-    <source />
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-	  <screenshot>screenshot-01.jpg</screenshot>
-      <screenshot>screenshot-02.jpg</screenshot>
-    </assets>
-  </extension>
-</addon><addon id="plugin.video.vstream" name="vStream" version="1.7.0" provider-name="venom-xbmc-addons">
-    <requires>
-
-        <trycatch>
-            <try>
-                <import addon="xbmc.python" version="3.0.0" />
-            </try>
-
-            <catch>
-                <import addon="xbmc.python" version="2.24.0" />
-            </catch>
-        </trycatch>
-        <import addon="repository.vstream" />
-        <import addon="script.module.pyqrcode" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.dnspython" optional="true" />
-        <import addon="script.module.urlresolver" optional="true" />
-        <import addon="script.module.selenium" optional="true" />
-        
-    </requires>
-
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
- 
-    <extension point="kodi.context.item">
-        <menu id="kodi.core.main">
-            <item library="resources/lib/gui/menuInformation.py">
-		        <label>$ADDON[plugin.video.vstream 30208]</label>
-				<visible>Window.IsVisible(home) + ListItem.Property(sMeta)</visible>
-            </item>
-            <item library="resources/lib/gui/menuAddBookmark.py">
-		        <label>$ADDON[plugin.video.vstream 30210]</label>
-				<visible>Window.IsVisible(home) + !ListItem.Property(isBookmark) + ListItem.Property(sMeta)</visible>
-            </item>
-            <item library="resources/lib/gui/menuSimil.py">
-		        <label>$ADDON[plugin.video.vstream 30213]</label>
-				<visible>Window.IsVisible(home) + ListItem.Property(sMeta)</visible>
-            </item>
-            <item library="resources/lib/gui/menuDelBookmark.py">
-		        <label>$ADDON[plugin.video.vstream 30412]</label>
-				<visible>Window.IsVisible(home) + ListItem.Property(isBookmark)</visible>
-            </item>
-            <item library="resources/lib/gui/menuDelViewing.py">
-		        <label>$ADDON[plugin.video.vstream 30412]</label>
-				<visible>Window.IsVisible(home) + ListItem.Property(isViewing)</visible>
-            </item>
-		</menu>
-    </extension>
-
-    <extension point="xbmc.service" library="service.py" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="fr_FR">vStream par Venom, TmpName, Arias800, Razorex, Sizanic, Yodidon.</summary>
-        <description lang="fr_FR">vStream est un module de streaming Francais, retrouvez tous vos films, series, japanimes, documentaires, reportages, concerts, sports,...</description>
-        <disclaimer lang="fr_FR">vStream est un addon de streaming videos</disclaimer>
-        <summary lang="fr_CA">vStream par Venom, TmpName, Arias800, Razorex, Sizanic, Yodidon.</summary>
-        <description lang="fr_CA">vStream est un module de streaming Francais, trouvez tous vos films, series et mangas.</description>
-        <disclaimer lang="fr_CA">vStream est un addon de streaming videos</disclaimer>
-        <summary lang="en_GB">vStream by Venom, TmpName, Arias800, Razorex, Sizanic, Yodidon.</summary>
-        <description lang="en_GB">vStream module and a French streaming, find all your movies, TV shows and mangas.</description>
-        <disclaimer lang="en_GB">vStream is a video streaming addon</disclaimer>
-        <summary lang="en_NZ">vStream by Venom, TmpName, Arias800, Razorex, Sizanic, Yodidon.</summary>
-        <description lang="en_NZ">vStream module and a French streaming, find all your movies, TV shows and mangas.</description>
-        <disclaimer lang="en_NZ">vStream is a video streaming addon</disclaimer>
-        <summary lang="en_US">vStream by Venom, TmpName, Arias800, Razorex, Sizanic, Yodidon.</summary>
-        <description lang="en_US">vStream module and a French streaming, find all your movies, TV shows and mangas.</description>
-        <disclaimer lang="en_US">vStream is a video streaming addon</disclaimer>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE</license>
-        <forum>https://github.com/Kodi-vStream/venom-xbmc-addons/issues</forum>
-        <source>https://github.com/Kodi-vStream/venom-xbmc-addons/</source>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <screenshot>screenshot-01.jpg</screenshot>
-            <screenshot>screenshot-02.jpg</screenshot>
-            <screenshot>screenshot-03.jpg</screenshot>
-        </assets>
-    </extension>
-</addon><addon id="repository.auramod.aio" name="Auramod Repo AIO" version="1.0" provider-name="SerpentDrago">
+<root><addon id="repository.auramod.aio" name="Auramod Repo AIO" version="1.0" provider-name="SerpentDrago">
 	<extension point="xbmc.addon.repository" name="Auramod Repo AIO">
 		<dir minversion="18.0" maxversion="18.9.9">
 			<info compressed="false">https://raw.githubusercontent.com/SerpentDrago/repository.auramod.aio/master/repo/leia/zips/addons.xml</info>
@@ -306,6 +140,31 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 	</extension>
+</addon><addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.4" provider-name="rmrector">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0" />
+	</requires>
+	<extension point="xbmc.addon.repository" name="Rector Repository">
+		<dir maxversion="18.9.0">
+			<info>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python2/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python2/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python2/</datadir>
+		</dir>
+		<dir minversion="18.9.700">
+			<info>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python3/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python3/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python3/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">A little place for my stuff.</summary>
+		<description lang="en">I'm Rector, I do stuff, I put it here.</description>
+		<platform>all</platform>
+		<disclaimer />
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
 </addon><addon id="repository.roidy-matrix" name="roidy's matrix test repository" version="0.0.1" provider-name="roidy">
     <extension point="xbmc.addon.repository" name="roidy's matrix test repository">
         <dir>
@@ -412,4 +271,4 @@
         <description lang="en">Download and install vStream</description>
         <platform>all</platform>
     </extension>
-</addon></addons>
+</addon></root>
